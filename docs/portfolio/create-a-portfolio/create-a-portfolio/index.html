@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=60816&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Create a Portfolio Website
+  #
+
+Purpose
+This document describes the process for creating a static portfolio website using Hugo and GitHub Pages.
+Audience
+This document is intended for individuals interested in using Hugo and GitHub Pages to create and host a portfolio.
+
+  Overview
+  #
+
+To create and publish a portfolio website, take the following steps:
+
+Create two GitHub repositories to host the content and the site&rsquo;s files
+Create a Hugo site
+Set up the site configuration file
+Add content to the site
+Clone the GitHub Pages Site Repository
+Add the GitHub Site Repository as a Submodule
+Deploy the site using GitHub Pages
+
+
+  Prerequisites
+  #
+
+Before you begin this guide you must:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:60816/docs/portfolio/create-a-portfolio/create-a-portfolio/">
+  <meta property="og:site_name" content="Angel Tellez Portfolio">
+  <meta property="og:title" content="Create a Portfolio Website">
+  <meta property="og:description" content="Create a Portfolio Website # Purpose
+This document describes the process for creating a static portfolio website using Hugo and GitHub Pages.
+Audience
+This document is intended for individuals interested in using Hugo and GitHub Pages to create and host a portfolio.
+Overview # To create and publish a portfolio website, take the following steps:
+Create two GitHub repositories to host the content and the site’s files Create a Hugo site Set up the site configuration file Add content to the site Clone the GitHub Pages Site Repository Add the GitHub Site Repository as a Submodule Deploy the site using GitHub Pages Prerequisites # Before you begin this guide you must:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Create a Portfolio Website | Angel Tellez Portfolio</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:60816/docs/portfolio/create-a-portfolio/create-a-portfolio/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.16db1b38ba63fd46b7e3e5ef0566c5efc6e6e0b733e3c1acf497c0256705eb8f.js" integrity="sha256-FtsbOLpj/Ua34&#43;XvBWbF78bm4Lcz48Gs9JfAJWcF648=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Angel Tellez Portfolio</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/profile/" class="">Profile</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/portfolio/" class="">Portfolio</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/portfolio/create-a-portfolio/create-a-portfolio/" class="active">Create a Portfolio Website</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/portfolio/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/portfolio/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">KaTeX</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Create a Portfolio Website</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#create-the-github-repositories">Create the GitHub Repositories</a>
+      <ul>
+        <li><a href="#content-repository">Content Repository</a></li>
+        <li><a href="#site-repository">Site Repository</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-hugo-site">Create a Hugo site</a></li>
+    <li><a href="#set-up-the-site-configuration-file">Set Up the Site Configuration File</a></li>
+    <li><a href="#add-content-to-the-site">Add Content to the Site</a></li>
+    <li><a href="#clone-the-github-pages-site-repository">Clone the GitHub Pages Site Repository</a></li>
+    <li><a href="#add-the-github-site-repository-as-a-submodule">Add the GitHub Site Repository as a Submodule</a></li>
+    <li><a href="#deploy-the-site-using-github-pages">Deploy the Site Using GitHub Pages</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="create-a-portfolio-website">
+  Create a Portfolio Website
+  <a class="anchor" href="#create-a-portfolio-website">#</a>
+</h1>
+<p><strong>Purpose</strong></p>
+<p>This document describes the process for creating a static portfolio website using Hugo and GitHub Pages.</p>
+<p><strong>Audience</strong></p>
+<p>This document is intended for individuals interested in using Hugo and GitHub Pages to create and host a portfolio.</p>
+<h2 id="overview">
+  Overview
+  <a class="anchor" href="#overview">#</a>
+</h2>
+<p>To create and publish a portfolio website, take the following steps:</p>
+<ol>
+<li><a href="#create-the-github-repositories">Create two GitHub repositories to host the content and the site&rsquo;s files</a></li>
+<li><a href="#create-a-hugo-site">Create a Hugo site</a></li>
+<li><a href="#set-up-the-site-configuration-file">Set up the site configuration file</a></li>
+<li><a href="#add-content-to-the-site">Add content to the site</a></li>
+<li><a href="#clone-the-github-pages-site-repository">Clone the GitHub Pages Site Repository</a></li>
+<li><a href="#add-the-github-site-repository-as-a-submodule">Add the GitHub Site Repository as a Submodule</a></li>
+<li><a href="#deploy-the-site-using-github-pages">Deploy the site using GitHub Pages</a></li>
+</ol>
+<h2 id="prerequisites">
+  Prerequisites
+  <a class="anchor" href="#prerequisites">#</a>
+</h2>
+<p>Before you begin this guide you must:</p>
+<ul>
+<li><a href="https://gohugo.io/installation/">Install Hugo</a> (version 0.134 or higher)</li>
+<li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a></li>
+<li><a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">Create a GitHub account</a></li>
+</ul>
+<h2 id="create-the-github-repositories">
+  Create the GitHub Repositories
+  <a class="anchor" href="#create-the-github-repositories">#</a>
+</h2>
+<p>This guide uses two separate repositories linked via Git submodules, following these criteria:</p>
+<ul>
+<li><a href="#content-repository"><strong>Content Repository</strong></a>: Stores Markdown content, Hugo configuration files, and themes subdirectories.</li>
+<li><a href="#site-repository"><strong>Site Repository</strong></a>: Contains the HTML, CSS, and JavaScript files generated by Hugo.</li>
+</ul>
+<p>A <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Git submodule</a> is a repository nested inside another repository, enabling you to manage content separately from deployment files while keeping them linked. Using a submodule ensures that updates to your website&rsquo;s source code do not directly affect the published site until changes are explicitly pushed.</p>
+<h3 id="content-repository">
+  Content Repository
+  <a class="anchor" href="#content-repository">#</a>
+</h3>
+<p>To create the <code>source</code> content repository from GitHub&rsquo;s web UI, follow the next steps:</p>
+<ol>
+<li>Go to your GitHub dashboard.<br>
+<a  href="https://github.com/dashboard"   target="_blank" rel="noopener"  class="book-btn">GitHub Dashboard</a>
+</li>
+<li>In the upper-right corner of the page, select the <strong>New Repository</strong> option from the  <strong>+</strong> drowpdown list.
+<img src="/assets/new-repository.jpg" alt="New Repository" title="New Repository"/></li>
+<li>From the <strong>Owner</strong> dropdown list, select the account you want to own the repository.</li>
+<li>Type the name of your repository, in this example, <code>source</code></li>
+<li>Select <code>Public</code> as the repository visibility. To learn more about public and private repositories, see <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility">About repository visibility</a>.</li>
+<li>Click the <strong>Create repository</strong> button at the bottom of the page.<br>
+The <strong>Repository overview page</strong> is displayed.
+<img src="source-repo-overview.jpg" alt="Repository overview page" /></li>
+</ol>
+<blockquote class="book-hint info">
+<p><strong>Note</strong>: You can also create a repository using the GitHub CLI. To learn more, see <a href="https://cli.github.com/manual/gh_repo_create"><code>gh repo create</code></a> in the GitHub CLI documentation.</p>
+</blockquote>
+<h3 id="site-repository">
+  Site Repository
+  <a class="anchor" href="#site-repository">#</a>
+</h3>
+<p>Create the site repository using a similar process:</p>
+<ol>
+<li>Go to your GitHub dashboard.<br>
+<a  href="https://github.com/dashboard"   target="_blank" rel="noopener"  class="book-btn">GitHub Dashboard</a>
+</li>
+<li>Select the <strong>New Repository</strong> option from the  <strong>+</strong> drowpdown list.</li>
+<li>From the <strong>Owner</strong> dropdown list, select the account you want to own the repository.</li>
+<li>Type <code>{github-username}.github.io</code> as the name of your repository.</li>
+<li>Select <code>Public</code> as the repository visibility.</li>
+<li>Click the <strong>Create repository</strong> button.</li>
+</ol>
+<blockquote class="book-hint info">
+<p><strong>Note</strong>: Use your <code>{github-username}.github.io</code> as the repository name for a shorter URL when the site is deployed. Alternatively, you can choose a different repository name, but the site’s URL will then appear as <code>{github-username}.github.io/{repository-name}</code>.</p>
+</blockquote>
+<h2 id="create-a-hugo-site">
+  Create a Hugo site
+  <a class="anchor" href="#create-a-hugo-site">#</a>
+</h2>
+<p>Hugo is a static site generator that transforms Markdown files into a structured website. This section covers setting up a new Hugo project and configuring it with a theme. To create a new Hugo site in your <code>source</code> directory using the <a href="https://themes.gohugo.io/themes/hugo-book/">Hugo Book</a> theme, follow the next steps:</p>
+<ol>
+<li>
+<p>In the location of your choice, clone the <code>source</code> repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/antellezr/source.git
+</span></span></code></pre></div></li>
+<li>
+<p>Change to your <code>source</code> directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd source
+</span></span></code></pre></div></li>
+<li>
+<p>Create a new Hugo site:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site <span style="color:#f92672">{</span>hugo-site-name<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>The root <a href="https://gohugo.io/getting-started/directory-structure/">directory structure</a> for your project is created.</p>
+</li>
+<li>
+<p>Change into the site directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd <span style="color:#f92672">{</span>hugo-site-name<span style="color:#f92672">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Add the Hugo Book theme as a Git submodule:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
+</span></span></code></pre></div></li>
+<li>
+<p>Set the theme in the <code>hugo.toml</code> site configuration file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;theme = &#39;hugo-book&#39;&#34;</span> &gt;&gt; hugo.toml
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="set-up-the-site-configuration-file">
+  Set Up the Site Configuration File
+  <a class="anchor" href="#set-up-the-site-configuration-file">#</a>
+</h2>
+<p>The <code>hugo.toml</code> configuration file is the main settings file for a Hugo site. It defines site-wide configuration options that control how Hugo generates and structures the static site, including:</p>
+<ul>
+<li>Site metadata</li>
+<li>Theme configuration</li>
+<li>Content settings</li>
+<li>Custom parameters</li>
+</ul>
+<p>Edit the <code>hugo.toml</code> configuration file to match your site details:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://{github-username}.github.io/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;{User Name} Portfolio&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;hugo-book&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Shortcodes support</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h2 id="add-content-to-the-site">
+  Add Content to the Site
+  <a class="anchor" href="#add-content-to-the-site">#</a>
+</h2>
+<p>The Hugo Book theme includes an <code>exampleSite</code> directory with sample pages and blog posts that showcase the theme’s features. These examples serve as the starting point for this guide.</p>
+<p>To copy the content of the <code>exampleSite</code> subdirectory to your root directory, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp -R themes/hugo-book/exampleSite/content.en/* ./content
+</span></span></code></pre></div><p>By default, the theme renders pages from the <code>/content/docs</code> section as a menu in a tree structure.
+You can set <code>title</code> and <code>weight</code> in the front matter of pages to adjust the order and titles in the menu, as well as other parameters to hide or alter URLs in the menu.</p>
+<p>Alternatively, you can create new content manually using the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new content content/posts/my-first-post.md
+</span></span></code></pre></div><blockquote class="book-hint info">
+<p><strong>Note</strong>: For more information about content types in Hugo, see the <a href="https://gohugo.io/content-management/types/">Content Management</a> section of the Hugo documentation.</p>
+</blockquote>
+<h2 id="clone-the-github-pages-site-repository">
+  Clone the GitHub Pages Site Repository
+  <a class="anchor" href="#clone-the-github-pages-site-repository">#</a>
+</h2>
+<p>To clone the GitHub Pages Site Repository, follow the next steps:</p>
+<ol>
+<li>
+<p>Navigate back to the parent directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ..
+</span></span></code></pre></div></li>
+<li>
+<p>Clone the GitHub Pages repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>clone repo https://github.com/antellezr/antellezr.github.io.git
+</span></span></code></pre></div></li>
+<li>
+<p>Navigate into the repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd <span style="color:#f92672">{</span>github-username<span style="color:#f92672">}</span>.github.io
+</span></span></code></pre></div></li>
+<li>
+<p>Create a README file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Touch README.md
+</span></span></code></pre></div></li>
+<li>
+<p>Commit and push the README file to the repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> git add .
+</span></span><span style="display:flex;"><span> git commit -m <span style="color:#e6db74">&#34;Adds README&#34;</span>
+</span></span><span style="display:flex;"><span> git push origin main
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="add-the-github-site-repository-as-a-submodule">
+  Add the GitHub Site Repository as a Submodule
+  <a class="anchor" href="#add-the-github-site-repository-as-a-submodule">#</a>
+</h2>
+<p>To connect your Hugo project to the GitHub Pages repository, follow these steps.</p>
+<ol>
+<li>
+<p>Return to the Hugo root directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ../source/<span style="color:#f92672">{</span>hugo-site-name<span style="color:#f92672">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Add the site repository as a submodule:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add -b main https://github.com/antellezr/antellezr.github.io.git public
+</span></span></code></pre></div></li>
+<li>
+<p>Verify the submodule was added:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls public
+</span></span></code></pre></div></li>
+<li>
+<p>Ensure the <code>public</code> folder contains a <code>README.md</code> file.</p>
+</li>
+</ol>
+<h2 id="deploy-the-site-using-github-pages">
+  Deploy the Site Using GitHub Pages
+  <a class="anchor" href="#deploy-the-site-using-github-pages">#</a>
+</h2>
+<p>To make your Hugo site publicly accessible, you need to generate the static website files and deploy them to GitHub Pages. Follow these steps to build and publish your site.</p>
+<ol>
+<li>
+<p>Start the local development server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div></li>
+</ol>
+  <blockquote class="book-hint info">
+<p><strong>Note</strong>: This command starts the local server and enables you to view your site in the browser. To stop the server, press <code>Ctrl + C</code>.</p>
+</blockquote>
+<ol start="2">
+<li>
+<p>Generate the static website:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo -t hugo-book
+</span></span></code></pre></div></li>
+<li>
+<p>Navigate to the <code>public</code> directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd public
+</span></span></code></pre></div></li>
+<li>
+<p>Commit and push:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Initial site deployment&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div></li>
+</ol>
+<p>Once the <code>public</code> directory is pushed, your site is live at:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://<span style="color:#f92672">{</span>github-username<span style="color:#f92672">}</span>.github.io/
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#create-the-github-repositories">Create the GitHub Repositories</a>
+      <ul>
+        <li><a href="#content-repository">Content Repository</a></li>
+        <li><a href="#site-repository">Site Repository</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-hugo-site">Create a Hugo site</a></li>
+    <li><a href="#set-up-the-site-configuration-file">Set Up the Site Configuration File</a></li>
+    <li><a href="#add-content-to-the-site">Add Content to the Site</a></li>
+    <li><a href="#clone-the-github-pages-site-repository">Clone the GitHub Pages Site Repository</a></li>
+    <li><a href="#add-the-github-site-repository-as-a-submodule">Add the GitHub Site Repository as a Submodule</a></li>
+    <li><a href="#deploy-the-site-using-github-pages">Deploy the Site Using GitHub Pages</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

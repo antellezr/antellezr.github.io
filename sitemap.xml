@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://antellezr.github.io/docs/example/</loc>
+    <loc>https://antellezr.github.io/docs/portfolio/create-a-portfolio/</loc>
   </url><url>
-    <loc>https://antellezr.github.io/docs/example/table-of-contents/with-toc/</loc>
+    <loc>https://antellezr.github.io/docs/profile/</loc>
   </url><url>
-    <loc>https://antellezr.github.io/docs/example/table-of-contents/without-toc/</loc>
+    <loc>https://antellezr.github.io/docs/portfolio/script-doc/</loc>
   </url><url>
     <loc>https://antellezr.github.io/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
@@ -14,9 +14,7 @@
     <loc>https://antellezr.github.io/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://antellezr.github.io/docs/example/table-of-contents/</loc>
-  </url><url>
-    <loc>https://antellezr.github.io/docs/example/collapsed/</loc>
+    <loc>https://antellezr.github.io/docs/portfolio/</loc>
   </url><url>
     <loc>https://antellezr.github.io/posts/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
@@ -60,11 +58,7 @@
     <loc>https://antellezr.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://antellezr.github.io/docs/example/collapsed/3rd-level/4th-level/</loc>
-  </url><url>
-    <loc>https://antellezr.github.io/docs/example/collapsed/3rd-level/</loc>
-  </url><url>
-    <loc>https://antellezr.github.io/docs/example/hidden/</loc>
+    <loc>https://antellezr.github.io/docs/profile/hidden/</loc>
   </url><url>
     <loc>https://antellezr.github.io/docs/shortcodes/</loc>
   </url><url>

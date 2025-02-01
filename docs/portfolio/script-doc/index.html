@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Downloads Organizer Script Documentation
+  #
+
+
+  Purpose
+  #
+
+This document describes the structure and functionality of a Python script that organizes files in the Downloads directory on macOS by categorizing them into predefined folders based on file size, type, and directory status.
+
+  Audience
+  #
+
+Individuals with basic programming knowledge who wish to automate file organization tasks.
+
+  Overview
+  #
+
+The script automates the organization of files within the Downloads directory. It:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://antellezr.github.io/docs/portfolio/script-doc/">
+  <meta property="og:site_name" content="Angel Tellez Portfolio">
+  <meta property="og:title" content="Script Documentation">
+  <meta property="og:description" content="Downloads Organizer Script Documentation # Purpose # This document describes the structure and functionality of a Python script that organizes files in the Downloads directory on macOS by categorizing them into predefined folders based on file size, type, and directory status.
+Audience # Individuals with basic programming knowledge who wish to automate file organization tasks.
+Overview # The script automates the organization of files within the Downloads directory. It:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Script Documentation | Angel Tellez Portfolio</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://antellezr.github.io/docs/portfolio/script-doc/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.748487e2990ffb480d913cb29e49389ca07ac693d073763210011313f910cf6f.js" integrity="sha256-dISH4pkP&#43;0gNkTyynkk4nKB6xpPQc3YyEAETE/kQz28=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Angel Tellez Portfolio</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/profile/" class="">Profile</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/portfolio/" class="">Portfolio</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/portfolio/create-a-portfolio/" class="">Create a Portfolio Website</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/portfolio/script-doc/" class="active">Script Documentation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">KaTeX</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Script Documentation</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#purpose">Purpose</a></li>
+    <li><a href="#audience">Audience</a></li>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#script-code">Script Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#running-the-script">Running the Script</a></li>
+    <li><a href="#script-structure-and-explanation">Script Structure and Explanation</a>
+      <ul>
+        <li><a href="#initialization">Initialization</a></li>
+        <li><a href="#utility-functions">Utility Functions</a></li>
+        <li><a href="#main-functions">Main Functions</a></li>
+        <li><a href="#script-execution">Script Execution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="downloads-organizer-script-documentation">
+  Downloads Organizer Script Documentation
+  <a class="anchor" href="#downloads-organizer-script-documentation">#</a>
+</h1>
+<h2 id="purpose">
+  Purpose
+  <a class="anchor" href="#purpose">#</a>
+</h2>
+<p>This document describes the structure and functionality of a Python script that organizes files in the Downloads directory on macOS by categorizing them into predefined folders based on file size, type, and directory status.</p>
+<h2 id="audience">
+  Audience
+  <a class="anchor" href="#audience">#</a>
+</h2>
+<p>Individuals with basic programming knowledge who wish to automate file organization tasks.</p>
+<h2 id="overview">
+  Overview
+  <a class="anchor" href="#overview">#</a>
+</h2>
+<p>The script automates the organization of files within the <strong>Downloads</strong> directory. It:</p>
+<ol>
+<li>Groups files exceeding a specified size into a dedicated folder.</li>
+<li>Separates files without extensions into a separate folder.</li>
+<li>Categorizes files with extensions into subdirectories based on their extension.</li>
+<li>Moves all subdirectories into a designated folder.</li>
+</ol>
+<p>This document provides a comprehensive explanation of how the script functions and how users can execute it.</p>
+<details ><summary>Show complete script</summary>
+  <div class="markdown-inner">
+<h3 id="script-code">
+  Script Code
+  <a class="anchor" href="#script-code">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> shutil
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the root directory (Downloads folder) and the main folder structure</span>
+</span></span><span style="display:flex;"><span>DOWNLOADS_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#34;~/Downloads&#34;</span>)
+</span></span><span style="display:flex;"><span>BIG_FILES_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;01-BIG FILES&#34;</span>)
+</span></span><span style="display:flex;"><span>UNKNOWN_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;02-UNKNOWN&#34;</span>)
+</span></span><span style="display:flex;"><span>FILE_TYPES_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;03-FILE TYPES&#34;</span>)
+</span></span><span style="display:flex;"><span>FOLDERS_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;04-FOLDERS&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ensure the main directories exist</span>
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>makedirs(BIG_FILES_DIR, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>makedirs(UNKNOWN_DIR, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>makedirs(FILE_TYPES_DIR, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>makedirs(FOLDERS_DIR, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exclude the script file itself and main folders</span>
+</span></span><span style="display:flex;"><span>SCRIPT_NAME <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(__file__)
+</span></span><span style="display:flex;"><span>MAIN_FOLDERS <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;01-BIG FILES&#34;</span>, <span style="color:#e6db74">&#34;02-UNKNOWN&#34;</span>, <span style="color:#e6db74">&#34;03-FILE TYPES&#34;</span>, <span style="color:#e6db74">&#34;04-FOLDERS&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_file_size</span>(file_path):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Get the size of a file in bytes.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>getsize(file_path)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">move_file</span>(file_path, target_dir):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Move a file to the target directory, creating the directory if needed.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>makedirs(target_dir, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    shutil<span style="color:#f92672">.</span>move(file_path, target_dir)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">organize_files</span>(directory):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Organize files in the given directory based on their extensions.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(directory):
+</span></span><span style="display:flex;"><span>        item_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(directory, item)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Skip the script itself and main folders</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> item <span style="color:#f92672">==</span> SCRIPT_NAME <span style="color:#f92672">or</span> item <span style="color:#f92672">in</span> MAIN_FOLDERS:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Move existing folders to 04-FOLDERS</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(item_path):
+</span></span><span style="display:flex;"><span>            move_file(item_path, FOLDERS_DIR)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Skip hidden files</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> item<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;.&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Handle files larger than 500 MB</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> get_file_size(item_path) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">500</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span>:
+</span></span><span style="display:flex;"><span>            move_file(item_path, BIG_FILES_DIR)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Handle files without extensions</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> item:
+</span></span><span style="display:flex;"><span>            move_file(item_path, UNKNOWN_DIR)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Organize by file extension</span>
+</span></span><span style="display:flex;"><span>        ext <span style="color:#f92672">=</span> item<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>        ext_dir <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(FILE_TYPES_DIR, ext<span style="color:#f92672">.</span>upper())
+</span></span><span style="display:flex;"><span>        move_file(item_path, ext_dir)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_big_files</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Organize files inside the BIG_FILES_DIR by their extensions.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(BIG_FILES_DIR):
+</span></span><span style="display:flex;"><span>        item_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(BIG_FILES_DIR, item)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Skip directories and hidden files</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(item_path) <span style="color:#f92672">or</span> item<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;.&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Organize by file extension</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">in</span> item:
+</span></span><span style="display:flex;"><span>            ext <span style="color:#f92672">=</span> item<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>            ext_dir <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(BIG_FILES_DIR, ext<span style="color:#f92672">.</span>upper())
+</span></span><span style="display:flex;"><span>            move_file(item_path, ext_dir)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Run the script</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Organizing files in the Downloads folder...&#34;</span>)
+</span></span><span style="display:flex;"><span>    organize_files(DOWNLOADS_DIR)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Organizing files in the &#39;01-BIG FILES&#39; folder...&#34;</span>)
+</span></span><span style="display:flex;"><span>    process_big_files()
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Organization complete.&#34;</span>)
+</span></span></code></pre></div>  </div>
+</details>
+<h2 id="prerequisites">
+  Prerequisites
+  <a class="anchor" href="#prerequisites">#</a>
+</h2>
+<p>Ensure the following before running the script:</p>
+<ul>
+<li><strong>Python</strong>: Install Python version 3.6 or later.</li>
+<li><strong>Permissions</strong>: Confirm you have read and write access to the Downloads directory.</li>
+<li><strong>Terminal</strong>: Basic understanding of using the terminal or command prompt to execute Python scripts.</li>
+</ul>
+<hr>
+<h2 id="running-the-script">
+  Running the Script
+  <a class="anchor" href="#running-the-script">#</a>
+</h2>
+<p>To execute the script, follow these steps:</p>
+<ol>
+<li>
+<p>Save the script file as <code>organize_downloads.py</code> in your Downloads directory.</p>
+</li>
+<li>
+<p>Open a terminal or command prompt.</p>
+</li>
+<li>
+<p>Navigate to the Downloads directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/Downloads
+</span></span></code></pre></div></li>
+<li>
+<p>Run the script using the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python organize_downloads.py
+</span></span></code></pre></div><p>The script displays messages indicating its progress.</p>
+</li>
+</ol>
+<hr>
+<h2 id="script-structure-and-explanation">
+  Script Structure and Explanation
+  <a class="anchor" href="#script-structure-and-explanation">#</a>
+</h2>
+<p>This section provides detailed information about the script’s structure and functionality.</p>
+<h3 id="initialization">
+  Initialization
+  <a class="anchor" href="#initialization">#</a>
+</h3>
+<p>The script begins by defining the <strong>Downloads</strong> directory and four subdirectories for file organization:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DOWNLOADS_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#34;~/Downloads&#34;</span>)
+</span></span><span style="display:flex;"><span>BIG_FILES_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;01-BIG FILES&#34;</span>)
+</span></span><span style="display:flex;"><span>UNKNOWN_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;02-UNKNOWN&#34;</span>)
+</span></span><span style="display:flex;"><span>FILE_TYPES_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;03-FILE TYPES&#34;</span>)
+</span></span><span style="display:flex;"><span>FOLDERS_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DOWNLOADS_DIR, <span style="color:#e6db74">&#34;04-FOLDERS&#34;</span>)
+</span></span></code></pre></div><p>Each folder serves a specific purpose:</p>
+<ul>
+<li><strong>01-BIG FILES</strong>: Files larger than 500 MB.</li>
+<li><strong>02-UNKNOWN</strong>: Files without extensions.</li>
+<li><strong>03-FILE TYPES</strong>: Files categorized by their extensions.</li>
+<li><strong>04-FOLDERS</strong>: Existing subdirectories from the Downloads directory.</li>
+</ul>
+<h4 id="directory-creation">
+  Directory Creation
+  <a class="anchor" href="#directory-creation">#</a>
+</h4>
+<p>The script ensures these folders exist and prevents errors if the directories are already present.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>os<span style="color:#f92672">.</span>makedirs(directory_name, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div><hr>
+<h3 id="utility-functions">
+  Utility Functions
+  <a class="anchor" href="#utility-functions">#</a>
+</h3>
+<h4 id="get_file_size">
+  <code>get_file_size</code>
+  <a class="anchor" href="#get_file_size">#</a>
+</h4>
+<p>This function calculates the size of a file in bytes and identifies files that exceed the 500 MB size threshold.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_file_size</span>(file_path):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>getsize(file_path)
+</span></span></code></pre></div><h4 id="move_file">
+  <code>move_file</code>
+  <a class="anchor" href="#move_file">#</a>
+</h4>
+<p>This function moves a file to a specified directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">move_file</span>(file_path, target_dir):
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>makedirs(target_dir, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    shutil<span style="color:#f92672">.</span>move(file_path, target_dir)
+</span></span></code></pre></div><hr>
+<h3 id="main-functions">
+  Main Functions
+  <a class="anchor" href="#main-functions">#</a>
+</h3>
+<h4 id="organize_files-function">
+  <code>organize_files</code> Function
+  <a class="anchor" href="#organize_files-function">#</a>
+</h4>
+<p>This function processes the contents of the Downloads directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">organize_files</span>(directory):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(directory):
+</span></span><span style="display:flex;"><span>        item_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(directory, item)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> item <span style="color:#f92672">==</span> SCRIPT_NAME <span style="color:#f92672">or</span> item <span style="color:#f92672">in</span> MAIN_FOLDERS:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(item_path):
+</span></span><span style="display:flex;"><span>            move_file(item_path, FOLDERS_DIR)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> item<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;.&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> get_file_size(item_path) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">500</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span>:
+</span></span><span style="display:flex;"><span>            move_file(item_path, BIG_FILES_DIR)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> item:
+</span></span><span style="display:flex;"><span>            move_file(item_path, UNKNOWN_DIR)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            ext <span style="color:#f92672">=</span> item<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>            ext_dir <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(FILE_TYPES_DIR, ext<span style="color:#f92672">.</span>upper())
+</span></span><span style="display:flex;"><span>            move_file(item_path, ext_dir)
+</span></span></code></pre></div><p>The script follows a structured approach to sort and categorize files by:</p>
+<ol>
+<li>
+<p><strong>Skipping Specific Items</strong>: The script skips:</p>
+<ul>
+<li>The script file itself.</li>
+<li>Predefined main folders.</li>
+<li>Hidden files (files starting with a dot).</li>
+</ul>
+</li>
+<li>
+<p><strong>Managing Large Files</strong>: Files larger than 500 MB are moved to <strong>01-BIG FILES</strong>.</p>
+</li>
+<li>
+<p><strong>Identifying Files Without Extensions</strong>: These are moved to <strong>02-UNKNOWN</strong>.</p>
+</li>
+<li>
+<p><strong>Categorizing Files with Extensions</strong>: Files are categorized into extension-specific subdirectories under <strong>03-FILE TYPES</strong>.</p>
+</li>
+<li>
+<p><strong>Subdirectory Handling</strong>: Subdirectories are moved to <strong>04-FOLDERS</strong>.</p>
+</li>
+</ol>
+<h4 id="process_big_files-function">
+  <code>process_big_files</code> Function
+  <a class="anchor" href="#process_big_files-function">#</a>
+</h4>
+<p>After organizing files, the <code>process_big_files</code> function categorizes files within the <strong>01-BIG FILES</strong> folder by their extensions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_big_files</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(BIG_FILES_DIR):
+</span></span><span style="display:flex;"><span>        item_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(BIG_FILES_DIR, item)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(item_path) <span style="color:#f92672">or</span> item<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;.&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">in</span> item:
+</span></span><span style="display:flex;"><span>            ext <span style="color:#f92672">=</span> item<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>            ext_dir <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(BIG_FILES_DIR, ext<span style="color:#f92672">.</span>upper())
+</span></span><span style="display:flex;"><span>            move_file(item_path, ext_dir)
+</span></span></code></pre></div><hr>
+<h3 id="script-execution">
+  Script Execution
+  <a class="anchor" href="#script-execution">#</a>
+</h3>
+<p>The script’s execution starts with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Organizing files in the Downloads folder...&#34;</span>)
+</span></span><span style="display:flex;"><span>    organize_files(DOWNLOADS_DIR)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Organizing files in the &#39;01-BIG FILES&#39; folder...&#34;</span>)
+</span></span><span style="display:flex;"><span>    process_big_files()
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Organization complete.&#34;</span>)
+</span></span></code></pre></div><p>The script execution follows the next steps:</p>
+<ol>
+<li>Calls <code>organize_files</code> to process the Downloads directory.</li>
+<li>Calls <code>process_big_files</code> to handle large files.</li>
+<li>Displays messages to indicate progress and completion.</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#purpose">Purpose</a></li>
+    <li><a href="#audience">Audience</a></li>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#script-code">Script Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#running-the-script">Running the Script</a></li>
+    <li><a href="#script-structure-and-explanation">Script Structure and Explanation</a>
+      <ul>
+        <li><a href="#initialization">Initialization</a></li>
+        <li><a href="#utility-functions">Utility Functions</a></li>
+        <li><a href="#main-functions">Main Functions</a></li>
+        <li><a href="#script-execution">Script Execution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

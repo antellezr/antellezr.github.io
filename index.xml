@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on Angel Tellez Portfolio</title>
+    <title>Welcome on Angel Tellez Portfolio</title>
     <link>https://antellezr.github.io/</link>
-    <description>Recent content in Introduction on Angel Tellez Portfolio</description>
+    <description>Recent content in Welcome on Angel Tellez Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://antellezr.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>With ToC</title>
-      <link>https://antellezr.github.io/docs/example/table-of-contents/with-toc/</link>
+      <title>Script Documentation</title>
+      <link>https://antellezr.github.io/docs/portfolio/script-doc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://antellezr.github.io/docs/example/table-of-contents/with-toc/</guid>
-      <description>&lt;h1 id=&#34;caput-vino-delphine-in-tamen-vias&#34;&gt;&#xA;  Caput vino delphine in tamen vias&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#caput-vino-delphine-in-tamen-vias&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;cognita-laeva-illo-fracta&#34;&gt;&#xA;  Cognita laeva illo fracta&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#cognita-laeva-illo-fracta&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum pavent auras, surgit nunc cingentibus libet &lt;strong&gt;Laomedonque que&lt;/strong&gt;&#xA;est. Pastor &lt;a href=&#34;http://est.org/ire.aspx&#34;&gt;An&lt;/a&gt; arbor filia foedat, ne &lt;a href=&#34;http://www.indiciumturbam.org/moramquid.php&#34;&gt;fugit&#xA;aliter&lt;/a&gt;, per. Helicona illas et&#xA;callida neptem est &lt;em&gt;Oresitrophos&lt;/em&gt; caput, dentibus est venit. Tenet reddite&#xA;&lt;a href=&#34;http://www.antro-et.net/&#34;&gt;famuli&lt;/a&gt; praesentem fortibus, quaeque vis foret si&#xA;frondes &lt;em&gt;gelidos&lt;/em&gt; gravidae circumtulit &lt;a href=&#34;http://incurvasustulit.io/illi-virtute.html&#34;&gt;inpulit armenta&#xA;nativum&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Te at cruciabere vides rubentis manebo&lt;/li&gt;&#xA;&lt;li&gt;Maturuit in praetemptat ruborem ignara postquam habitasse&lt;/li&gt;&#xA;&lt;li&gt;Subitarum supplevit quoque fontesque venabula spretis modo&lt;/li&gt;&#xA;&lt;li&gt;Montis tot est mali quasque gravis&lt;/li&gt;&#xA;&lt;li&gt;Quinquennem domus arsit ipse&lt;/li&gt;&#xA;&lt;li&gt;Pellem turis pugnabant locavit&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;natus-quaerere&#34;&gt;&#xA;  Natus quaerere&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#natus-quaerere&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Pectora et sine mulcere, coniuge dum tincta incurvae. Quis iam; est dextra&#xA;Peneosque, metuis a verba, primo. Illa sed colloque suis: magno: gramen, aera&#xA;excutiunt concipit.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Without ToC</title>
-      <link>https://antellezr.github.io/docs/example/table-of-contents/without-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://antellezr.github.io/docs/example/table-of-contents/without-toc/</guid>
-      <description>&lt;h1 id=&#34;at-me-ipso-nepotibus-nunc-celebratior-genus&#34;&gt;&#xA;  At me ipso nepotibus nunc celebratior genus&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#at-me-ipso-nepotibus-nunc-celebratior-genus&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;tanto-oblite&#34;&gt;&#xA;  Tanto oblite&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#tanto-oblite&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque&#xA;illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro&#xA;clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens&#xA;vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat&#xA;admonitu concidit, ad resimas vultus et rugas vultu &lt;strong&gt;dignamque&lt;/strong&gt; Siphnon.&lt;/p&gt;&#xA;&lt;p&gt;Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt&#xA;dixit: ritu pharetramque. Exul Laurenti orantem modo, per densum missisque labor&#xA;manibus non colla unum, obiectat. Tu pervia collo, fessus quae Cretenque Myconon&#xA;crate! Tegumenque quae invisi sudore per vocari quaque plus ventis fluidos. Nodo&#xA;perque, fugisse pectora sorores.&lt;/p&gt;</description>
+      <guid>https://antellezr.github.io/docs/portfolio/script-doc/</guid>
+      <description>&lt;h1 id=&#34;downloads-organizer-script-documentation&#34;&gt;&#xA;  Downloads Organizer Script Documentation&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#downloads-organizer-script-documentation&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;purpose&#34;&gt;&#xA;  Purpose&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#purpose&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This document describes the structure and functionality of a Python script that organizes files in the Downloads directory on macOS by categorizing them into predefined folders based on file size, type, and directory status.&lt;/p&gt;&#xA;&lt;h2 id=&#34;audience&#34;&gt;&#xA;  Audience&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#audience&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Individuals with basic programming knowledge who wish to automate file organization tasks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;&#xA;  Overview&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#overview&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The script automates the organization of files within the &lt;strong&gt;Downloads&lt;/strong&gt; directory. It:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a New Theme</title>
@@ -52,16 +45,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://antellezr.github.io/docs/example/collapsed/3rd-level/4th-level/</link>
+      <link>https://antellezr.github.io/docs/profile/hidden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://antellezr.github.io/docs/example/collapsed/3rd-level/4th-level/</guid>
-      <description>&lt;h1 id=&#34;4th-level-of-menu&#34;&gt;&#xA;  4th Level of Menu&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#4th-level-of-menu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;&#xA;  Caesorum illa tu sentit micat vestes papyriferi&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Inde aderam facti; Theseus vis de tauri illa peream. Oculos &lt;strong&gt;uberaque&lt;/strong&gt; non&#xA;regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo;&#xA;gestanda nitidi, vero? Dum ne pectoraque testantur.&lt;/p&gt;&#xA;&lt;p&gt;Venasque repulsa Samos qui, exspectatum eram animosque hinc, &lt;a href=&#34;http://www.creveratnon.net/apricaaetheriis&#34;&gt;aut&#xA;manes&lt;/a&gt;, Assyrii. Cupiens auctoribus&#xA;pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae&#xA;iusto! Sedes ante dum superest &lt;strong&gt;extrema&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://antellezr.github.io/docs/example/hidden/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://antellezr.github.io/docs/example/hidden/</guid>
+      <guid>https://antellezr.github.io/docs/profile/hidden/</guid>
       <description>&lt;h1 id=&#34;this-page-is-hidden-in-menu&#34;&gt;&#xA;  This page is hidden in menu&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#this-page-is-hidden-in-menu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;quondam-non-pater-est-dignior-ille-eurotas&#34;&gt;&#xA;  Quondam non pater est dignior ille Eurotas&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#quondam-non-pater-est-dignior-ille-eurotas&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;latent-te-facies&#34;&gt;&#xA;  Latent te facies&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#latent-te-facies&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus,&#xA;frementes, qui in vel. Hippotades Peleus &lt;a href=&#34;http://gratia.net/tot-qua.php&#34;&gt;pennas&#xA;conscia&lt;/a&gt; cuiquam Caeneus quas.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pater demittere evincitque reddunt&lt;/li&gt;&#xA;&lt;li&gt;Maxime adhuc pressit huc Danaas quid freta&lt;/li&gt;&#xA;&lt;li&gt;Soror ego&lt;/li&gt;&#xA;&lt;li&gt;Luctus linguam saxa ultroque prior Tatiumque inquit&lt;/li&gt;&#xA;&lt;li&gt;Saepe liquitur subita superata dederat Anius sudor&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;cum-honorum-latona&#34;&gt;&#xA;  Cum honorum Latona&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#cum-honorum-latona&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;O fallor &lt;a href=&#34;http://www.spectataharundine.org/aquas-relinquit.html&#34;&gt;in sustinui&#xA;iussorum&lt;/a&gt; equidem.&#xA;Nymphae operi oris alii fronde parens dumque, in auro ait mox ingenti proxima&#xA;iamdudum maius?&lt;/p&gt;</description>
     </item>
     <item>

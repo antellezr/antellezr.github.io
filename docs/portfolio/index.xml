@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angel Tellez Portfolio</title>
+    <link>https://antellezr.github.io/docs/portfolio/</link>
+    <description>Recent content on Angel Tellez Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://antellezr.github.io/docs/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Script Documentation</title>
+      <link>https://antellezr.github.io/docs/portfolio/script-doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://antellezr.github.io/docs/portfolio/script-doc/</guid>
+      <description>&lt;h1 id=&#34;downloads-organizer-script-documentation&#34;&gt;&#xA;  Downloads Organizer Script Documentation&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#downloads-organizer-script-documentation&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;purpose&#34;&gt;&#xA;  Purpose&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#purpose&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This document describes the structure and functionality of a Python script that organizes files in the Downloads directory on macOS by categorizing them into predefined folders based on file size, type, and directory status.&lt;/p&gt;&#xA;&lt;h2 id=&#34;audience&#34;&gt;&#xA;  Audience&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#audience&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Individuals with basic programming knowledge who wish to automate file organization tasks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;&#xA;  Overview&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#overview&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The script automates the organization of files within the &lt;strong&gt;Downloads&lt;/strong&gt; directory. It:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
