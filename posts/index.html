@@ -17,7 +17,7 @@
 <link rel="canonical" href="https://antellezr.github.io/posts/">
 <link rel="stylesheet" href="/book.min.9e47f3ab8f6b25aff57542c27acde7903d75ffe0eaf01a96bc4950e5570bf177.css" integrity="sha256-nkfzq49rJa/1dULCes3nkD11/&#43;Dq8BqWvElQ5VcL8Xc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.3c7a4bf44bf78a94058ea0d9f7cdbdba561c007f6ac18013bc23a7eb8db1e68f.js" integrity="sha256-PHpL9Ev3ipQFjqDZ9829ulYcAH9qwYATvCOn642x5o8=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.4aac7045852c83ef199936559af1f6d1df62d6051191d5a55f81a7e1746db45a.js" integrity="sha256-SqxwRYUsg&#43;8ZmTZVmvH20d9i1gURkdWlX4Gn4XRttFo=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://antellezr.github.io/posts/index.xml" title="Angel Tellez Portfolio" />
 <!--
 Made with Book Theme
@@ -50,6 +50,18 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
 
 
 
@@ -137,16 +149,6 @@ https://github.com/alex-shpak/hugo-book
       <strong>Categories</strong>
       <ul>
       
-        <li class="flex justify-between">
-          <a href="/categories/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
       </ul>
     </li>
     
@@ -155,36 +157,6 @@ https://github.com/alex-shpak/hugo-book
     <li class="book-section-flat">
       <strong>Tags</strong>
       <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/go/">Go</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/hugo/">Hugo</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/templates/">Templates</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/themes/">Themes</a>
-          <span>1</span>
-        </li>
       
       </ul>
     </li>
@@ -204,12 +176,12 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/creating-a-new-theme/">Creating a New Theme</a>
+      <a href="/posts/why-hugo-and-github-pages/">Why Choose Hugo and GitHub Pages to Host Your Portfolio</a>
     </h2>
     
   <div class="flex align-center text-small book-post-date">
     <img src="/svg/calendar.svg" class="book-icon " alt="" />
-    <span>September 28, 2014</span>
+    <span>December 15, 2024</span>
   </div>
 
 
@@ -219,148 +191,9 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-    <div class="book-post-content"><h2 id="introduction">
-  Introduction
-  <a class="anchor" href="#introduction">#</a>
-</h2>
-<p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
-<p>We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.</p>
-        <a href="/posts/creating-a-new-theme/">...</a>
-      
-    </div>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/migrate-from-jekyll/">Migrating from Jekyll</a>
-    </h2>
-    
-  <div class="flex align-center text-small book-post-date">
-    <img src="/svg/calendar.svg" class="book-icon " alt="" />
-    <span>March 10, 2014</span>
-  </div>
-
-
-
-  
-
-  
-
-
-    <div class="book-post-content"><h2 id="move-static-content-to-static">
-  Move static content to <code>static</code>
-  <a class="anchor" href="#move-static-content-to-static">#</a>
-</h2>
-<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
-With Jekyll, something that looked like</p>
-<pre><code>▾ &lt;root&gt;/
-    ▾ images/
-        logo.png
-</code></pre>
-<p>should become</p>
-<pre><code>▾ &lt;root&gt;/
-    ▾ static/
-        ▾ images/
-            logo.png
-</code></pre>
-<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
-        <a href="/posts/migrate-from-jekyll/">...</a>
-      
-    </div>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/goisforlovers/">(Hu)go Template Primer</a>
-    </h2>
-    
-  <div class="flex align-center text-small book-post-date">
-    <img src="/svg/calendar.svg" class="book-icon " alt="" />
-    <span>April 2, 2014</span>
-  </div>
-
-
-
-  
-  <div class="text-small">
-    
-      <a href="/categories/development/">Development</a>, 
-      <a href="/categories/golang/">Golang</a>
-  </div>
-  
-
-  
-  <div class="text-small">
-    
-      <a href="/tags/go/">Go</a>, 
-      <a href="/tags/golang/">Golang</a>, 
-      <a href="/tags/templates/">Templates</a>, 
-      <a href="/tags/themes/">Themes</a>, 
-      <a href="/tags/development/">Development</a>
-  </div>
-  
-
-
-    <div class="book-post-content"><p>Hugo uses the excellent <a href="https://golang.org/">Go</a> <a href="https://golang.org/pkg/html/template/">html/template</a> library for
-its template engine. It is an extremely lightweight engine that provides a very
-small amount of logic. In our experience that it is just the right amount of
-logic to be able to create a good static website. If you have used other
-template systems from different languages or frameworks you will find a lot of
-similarities in Go templates.</p>
-<p>This document is a brief primer on using Go templates. The <a href="https://golang.org/pkg/html/template/">Go docs</a>
-provide more details.</p>
-        <a href="/posts/goisforlovers/">...</a>
-      
-    </div>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
-    </h2>
-    
-  <div class="flex align-center text-small book-post-date">
-    <img src="/svg/calendar.svg" class="book-icon " alt="" />
-    <span>April 2, 2014</span>
-  </div>
-
-
-
-  
-  <div class="text-small">
-    
-      <a href="/categories/development/">Development</a>, 
-      <a href="/categories/golang/">Golang</a>
-  </div>
-  
-
-  
-  <div class="text-small">
-    
-      <a href="/tags/go/">Go</a>, 
-      <a href="/tags/golang/">Golang</a>, 
-      <a href="/tags/hugo/">Hugo</a>, 
-      <a href="/tags/development/">Development</a>
-  </div>
-  
-
-
-    <div class="book-post-content"><h2 id="step-1-install-hugo">
-  Step 1. Install Hugo
-  <a class="anchor" href="#step-1-install-hugo">#</a>
-</h2>
-<p>Go to <a href="https://github.com/spf13/hugo/releases">Hugo releases</a> and download the
-appropriate version for your OS and architecture.</p>
-<p>Save it somewhere specific as we will be using it in the next step.</p>
-<p>More complete instructions are available at <a href="https://gohugo.io/getting-started/installing/">Install Hugo</a></p>
-<h2 id="step-2-build-the-docs">
-  Step 2. Build the Docs
-  <a class="anchor" href="#step-2-build-the-docs">#</a>
-</h2>
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
-<p>Follow the following steps:</p>
-        <a href="/posts/hugoisforlovers/">...</a>
+    <div class="book-post-content"><p>If you’re looking for a simple, fast, and reliable way to build your portfolio or personal website, Hugo and GitHub Pages are a great combination. Hugo is a powerful static site generator that makes creating a website straightforward, and GitHub Pages offers free hosting with built-in version control. Together, they provide a lightweight, flexible solution for anyone who wants a professional-looking website without dealing with complex server configurations.</p>
+<p>This post walks you through:</p>
+        <a href="/posts/why-hugo-and-github-pages/">...</a>
       
     </div>
   </article>
@@ -408,16 +241,6 @@ you are reading right now.</p>
       <strong>Categories</strong>
       <ul>
       
-        <li class="flex justify-between">
-          <a href="/categories/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
       </ul>
     </li>
     
@@ -426,36 +249,6 @@ you are reading right now.</p>
     <li class="book-section-flat">
       <strong>Tags</strong>
       <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/go/">Go</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/hugo/">Hugo</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/templates/">Templates</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/themes/">Themes</a>
-          <span>1</span>
-        </li>
       
       </ul>
     </li>
